@@ -53,21 +53,21 @@
 // a = 5; b = 7 -> max = 7
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
-// Console.Write("Введите число1: ");
-// int num1 = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите число2: ");
-// int num2 = Convert.ToInt32(Console.ReadLine());
-// int a = num1;
-// int b = num2;
+Console.Write("Введите число1: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число2: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+int a = num1;
+int b = num2;
 
-// int max = a;
+int max = a;
 
-// if (a > b) max = a;
+if (a > b) max = a;
 
-// if (a < b) max = b;
+if (a < b) max = b;
 
-// Console.WriteLine("max =");
-// Console.Write(max);
+Console.Write("max = ");
+Console.Write(max);
 
 
 
@@ -120,17 +120,13 @@
 
 // Console.Write("Введите число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
-// int length = Convert.ToInt32(Console.ReadLine());
-// if (length > num)
-
-// if (num == num / 2)
+// int ind = 1;
+// while ( ind <= num )
 // {
-//     Console.WriteLine("result");
+// if ( ind % 2 == 0 )
+// {
+//     Console.WriteLine($"{ind} ");
 // }
-
-
-
-
-
-
+// ind++;
+// }
 
