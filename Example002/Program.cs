@@ -124,20 +124,24 @@
 
 // 32679 -> 6
 
-//Console.Write("Введите число : ");
-int num = 1; //Convert.ToInt32(Console.ReadLine());
-//int i =Convert.ToInt32(Console.ReadLine());
-while ( num < 7)
-{
-   Console.WriteLine(num);
-   num ++;
-}
-Console.WriteLine("ок");
+// Console.Write("Введите число : ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int Lingth = 0;
+// int t = num;
+// while ( t > 0 && t < 3)
+// {
+//       Lingth ++;
+ 
+// }
+//    t = num;
+// // int i = 3;
+// // if (t > 0 && i > 0)
+// Console.WriteLine(num / 3);
+// // Console.WriteLine("ок");
 
 
 
-
-// Console.Write(result1);
+// / Console.Write(result1);
 // Console.Write(result2);
 
 
@@ -146,3 +150,16 @@ Console.WriteLine("ок");
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+
+
+Console.Write("Введите число 1: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num < 6 )
+{
+    Console.Write("Да");
+}
+else
+
+    Console.Write("Нет");
+
+
