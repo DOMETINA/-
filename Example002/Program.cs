@@ -124,13 +124,13 @@
 
 // 32679 -> 6
 
-Console.Write("Введите число : ");
-int num = Convert.ToInt32(Console.ReadLine());
-int i =Convert.ToInt32(Console.ReadLine());
-while (  i == 3)
+//Console.Write("Введите число : ");
+int num = 1; //Convert.ToInt32(Console.ReadLine());
+//int i =Convert.ToInt32(Console.ReadLine());
+while ( num < 7)
 {
    Console.WriteLine(num);
-   i ++;
+   num ++;
 }
 Console.WriteLine("ок");
 
