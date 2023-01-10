@@ -119,30 +119,14 @@
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
 // 645 -> 5
-
 // 78 -> третьей цифры нет
-
 // 32679 -> 6
 
-// Console.Write("Введите число : ");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int Lingth = 0;
-// int t = num;
-// while ( t > 0 && t < 3)
-// {
-//       Lingth ++;
- 
-// }
-//    t = num;
-// // int i = 3;
-// // if (t > 0 && i > 0)
-// Console.WriteLine(num / 3);
-// // Console.WriteLine("ок");
+Console.Write("Введите число : ");
+int num = Convert.ToInt32(Console.ReadLine());
+int arr;
 
 
-
-// / Console.Write(result1);
-// Console.Write(result2);
 
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
@@ -152,12 +136,12 @@
 // 1 -> нет
 
 
-Console.Write("Введите число 1: ");
+Console.Write("Введите число дня недели : ");
 int num = Convert.ToInt32(Console.ReadLine());
-if (num < 6 )
-{
+if (num == 6 || num == 7)
+
     Console.Write("Да");
-}
+
 else
 
     Console.Write("Нет");
