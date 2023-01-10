@@ -1,5 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Consol e.WriteLine("Hello, World!");
+
+
+
 // int num1 = 13;
 // int num2 = 5;
 // if (num1 > 3 &&  num2 > 3)
@@ -51,31 +54,22 @@
 
 // Console.WriteLine("OK");
 
-// Console.Write("Введите число1: ");
-// int num = Convert.ToInt32(Console.ReadLine());
-// double result1 = num / 100;
-
-// double result2 = num % 10;
 
 
-// Console.Write(result1);
-// Console.Write(result2);
 
-
-Console.Write("Введите число 1: ");
-double num1;
-Console.Write("Введите число 2: ");
-double num2;
- if double result1 = (num1/num2);
-{
- Console.WriteLine("кратно");
-}
-    
-
-   double result = num1 / num2 % 2;
-     
-   Console.WriteLine("не кратно, остаток (result)");  
-
+// Console.Write("Введите число 1: ");
+// double num1 = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите число 2: ");
+// double num2 = Convert.ToDouble(Console.ReadLine());
+// if (num1 == num2 * num2)
+// {
+//    Console.WriteLine("кратно");
+// }
+// else 
+// {
+//       Console.Write("не кратно, остаток ");
+//     Console.Write(num1 / num2);
+// }
 
 
 
@@ -91,3 +85,64 @@ double num2;
 // {
 //     Console.Write("no");
 // } 
+
+
+
+
+
+
+
+
+
+// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+
+
+
+// Console.Write("Введите число : ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// double result1 = num / 100;
+
+// double result2 = num % 10;
+
+
+// Console.Write(result1);
+// Console.Write(result2);
+
+
+
+
+
+// Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+// 645 -> 5
+
+// 78 -> третьей цифры нет
+
+// 32679 -> 6
+
+Console.Write("Введите число : ");
+int num = Convert.ToInt32(Console.ReadLine());
+int i =Convert.ToInt32(Console.ReadLine());
+while (  i == 3)
+{
+   Console.WriteLine(num);
+   i ++;
+}
+Console.WriteLine("ок");
+
+
+
+
+// Console.Write(result1);
+// Console.Write(result2);
+
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+// 6 -> да
+// 7 -> да
+// 1 -> нет
