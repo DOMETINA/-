@@ -56,23 +56,6 @@
 
 
 
-
-// Console.Write("Введите число 1: ");
-// double num1 = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Введите число 2: ");
-// double num2 = Convert.ToDouble(Console.ReadLine());
-// if (num1 == num2 * num2)
-// {
-//    Console.WriteLine("кратно");
-// }
-// else 
-// {
-//       Console.Write("не кратно, остаток ");
-//     Console.Write(num1 / num2);
-// }
-
-
-
 // Console.Write("Введите число1: ");
 // int num1 = Convert.ToInt32(Console.ReadLine());
 // Console.Write("Введите число2: ");
@@ -102,30 +85,42 @@
 
 
 
-// Console.Write("Введите число : ");
-// int num = Convert.ToInt32(Console.ReadLine());
-// double result1 = num / 100;
+Console.Write("Введите число : ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-// double result2 = num % 10;
+    Console.Write ((num / 10) %10);
 
 
-// Console.Write(result1);
-// Console.Write(result2);
+
 
 
 
 
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-Console.Write("Введите число : ");
-int num = Convert.ToInt32(Console.ReadLine());
-int arr;
-
+// Console.Write("Введите число : ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if ( num <= 99 )
+// {
+//     Console.Write("Третьей цифры нет");
+// }
+// else if (num == 100 ||  num < 999)
+// {
+//     Console.Write(num % 10);
+// }
+//  else if (num >= 999)
+// {
+//     while  (num >= 999) 
+//     {
+//         num = num /10;
+//     }
+//     Console.WriteLine(num%10);   
+// }
+    
 
 
 
@@ -136,14 +131,14 @@ int arr;
 // 1 -> нет
 
 
-Console.Write("Введите число дня недели : ");
-int num = Convert.ToInt32(Console.ReadLine());
-if (num == 6 || num == 7)
+// Console.Write("Введите число дня недели : ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if (num == 6 || num == 7)
 
-    Console.Write("Да");
+//     Console.Write("Да");
 
-else
+// else
 
-    Console.Write("Нет");
+//     Console.Write("Нет");
 
 
