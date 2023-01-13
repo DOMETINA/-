@@ -54,7 +54,7 @@
 //   Console.WriteLine(nums[i]);
 // }
 
- 
+
 
 
 
@@ -94,17 +94,34 @@
 // 12821 -> да
 // 23432 -> да
 
-Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-if (num < 100000 && num > 1000 )
-{
-  int [] nums = new int [num];
-  for (int i = 0; i < num; i++)
-  {
-    nums [i] = i + 1;
-    Console.WriteLine (nums [1]);
-  }
-}
+// onsole.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// double num1 = num / 10000;
+// double num2 = (num % 10000) / 1000;
+// double num3 = (num % 1000) / 100;
+// double num4 = (num % 100) / 10;
+// double num5 = num % 10;
+// if (num1 == num5 && num2 == num4)
+// {
+//     Console.WriteLine("да");
+// }C
+// else
+// {
+//     Console.WriteLine("нет");
+// }
+
+// double num3 = num  /10000;
+// double num4 = num  /10000;
+// double num5 = num  /10000;
+// {
+//   int [] nums = new int [num];
+//   for (int i = 0; i < num; i++)
+//   {
+//     nums [i] = i + 1;
+//     Console.WriteLine (nums [1]);
+//   }
+// }
 // else
 // {
 //   Console.WriteLine ("нет") ;
