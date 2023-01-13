@@ -53,21 +53,21 @@
 // a = 5; b = 7 -> max = 7
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
-Console.Write("Введите число1: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число2: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
-int a = num1;
-int b = num2;
+// Console.Write("Введите число1: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число2: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// int a = num1;
+// int b = num2;
 
-int max = a;
+// int max = a;
 
-if (a > b) max = a;
+// if (a > b) max = a;
 
-if (a < b) max = b;
+// if (a < b) max = b;
 
-Console.Write("max = ");
-Console.Write(max);
+// Console.Write("max = ");
+// Console.Write(max);
 
 
 
@@ -88,9 +88,8 @@ Console.Write(max);
 // int c = num3;
 // int max = a;
 
-// if (a > b) max = a;
-// if (b > a) max = b;
-// if (c > a) max = c;
+// if (b > max) max = b;
+// if (c > max) max = c;
 
 // Console.Write(max);
 
