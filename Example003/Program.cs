@@ -1,5 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
+//Лекция
+
+
+
+
+
 // Console.Write("Введите число 1: ");
 // double num1 = Convert.ToDouble(Console.ReadLine());
 // Console.Write("Введите число 2: ");
