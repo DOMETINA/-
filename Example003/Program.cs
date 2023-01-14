@@ -1,10 +1,33 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 //Лекция
-
-
-
-
+int[] arr = {6, 8, 3, 2, 1, 4, 5, 7};
+void PrintArray (int[] array)
+{
+    int count =  array.Length;  //  Первый этап:строки с 6 по 13 - считывание массива
+    for (int i = 0; i < count; i++)
+    {
+        Console.Write($"{array[i]}"); // вывод в одну строку
+    }
+    Console.WriteLine(); // пустая строка
+     }
+void SelectionSort(int[] array) // Второй этап: упорядочивание массива 
+ {
+     for (int i = 0; i < array.Length; i++)
+     {
+         int minPosition = i; // определение минимального значения
+         for (int j = i + 1; j < array.Length; j++)
+         {
+             if (array [j] < array[minPosition]) minPosition = j; // если наше значение меньше мин,то оно становиться мин
+         }
+ int temporary = array[i];    //обмен переменных - строки 23-25
+ array[i] = array[minPosition]; 
+ array[minPosition] = temporary;
+}
+ }
+PrintArray(arr);
+SelectionSort(arr);
+PrintArray(arr);
 
 // Console.Write("Введите число 1: ");
 // double num1 = Convert.ToDouble(Console.ReadLine());
