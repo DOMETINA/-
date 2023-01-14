@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
-//Лекция
+//ЛЕКЦИЯ 3
 int[] arr = {6, 8, 3, 2, 1, 4, 5, 7};
 void PrintArray (int[] array)
 {
@@ -28,6 +28,15 @@ void SelectionSort(int[] array) // Второй этап: упорядочива
 PrintArray(arr);
 SelectionSort(arr);
 PrintArray(arr);
+
+
+
+//ОТРАБОТАТЬ ЗАДАНИЕ
+// Дан текст. В тексте нужно все пробелы заменить черточками, 
+// маленькие буквы "к" заменить большими "К", 
+// а большие "С" заменить маленькими "с".
+
+
 
 // Console.Write("Введите число 1: ");
 // double num1 = Convert.ToDouble(Console.ReadLine());
