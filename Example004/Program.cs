@@ -8,16 +8,6 @@
 // 8 -> 36
 
 
-
-
-
-
-
-
-
-
-
-
 // Console.Write("Введите число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
 // int i = 0;
@@ -39,37 +29,78 @@
 // 89126 -> 5
 
 
- Console.Write("Введите число: ");
- int num = Convert.ToInt32(Console.ReadLine());
-int k = 0;
-int i = 0;
-if (i < num)
-while (num != 0)
-{
-    k = num/10; 
-    k = k /10;   
-        Console.WriteLine(k);
-    }     
-    
-   
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
+// int i = 0;
 
-
-
-
-
-
-
-
+// while (num > 0)
+// {
+//     i++;
+//     num = num / 10;
+// }
+//     Console.WriteLine(i);
 
 
 // Задача 28: Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
 // 4 -> 24 
 // 5 -> 120
 
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int i = 1;
+// int result = 1;
+// for (i = 1; i <= num; i++)
+// {
+//     result = result * i;
+// }
+// Console.WriteLine(result);
 
-
-//Задача 30: Напишите программу,которая вывщдит массив из 8 элементов, заполнненый нулями и единицами
+//Задача 30: Напишите программу,которая выводит массив из 8 элементов, заполнненый нулями и единицами
 // в случайном порядке
 // [1,0,1,1,0,1,0,0]
+
+// int[] array = new int [8];
+// for (int i = 0; i < array.Length; i++)
+// {
+//   array[i] = new Random().Next(0, 2);
+// Console.Write($"{ array [i]} ");
+//}
+
+
+// Домашнее задание
+
+// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+// 3, 5 -> 243 (3⁵)
+// 2, 4 -> 16
+
+// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+// 452 -> 11
+// 82 -> 10
+// 9012 -> 12
+
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int[] array =  new int [num];
+
+for (int i = 0; i < array.Length; i++)
+{
+int result = array[i] + (array [i] +1);
+
+// for (i = 0; i <= num; i++)
+Console.Write(result);
+    }
+//Console.WriteLine(result);
+
+
+// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// 6, 1, 33 -> [6, 1, 33]
+
+// int[] array =  new int [8];
+// for (int i = 0; i < array.Length; i++)
+// {
+//   array[i] = new Random().Next(0, 20);
+// Console.Write($"{ array [i]} ");
+// }
 
