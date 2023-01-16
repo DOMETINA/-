@@ -170,23 +170,23 @@
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-double[] array = new double[5];
-//double result = 0;
- double max = 0;
- double min = 0;
-for (double i = 0; i < array.Length; i++)
-{
-  array[i] = new Random().NextDouble();
-    System.Console.Write($"{array[i]}  ");
-}
-if (array[i] > max) 
-max = array[i];
-{
+// double[] array = new double[5];
+// //double result = 0;
+//  double max = 0;
+//  double min = 0;
+// for (double i = 0; i < array.Length; i++)
+// {
+//   array[i] = new Random().NextDouble();
+//     System.Console.Write($"{array[i]}  ");
+// }
+// if (array[i] > max) 
+// max = array[i];
+// {
     
-System.Console.Write($"{array[i]}  ");
-}
+// System.Console.Write($"{array[i]}  ");
+// }
 
-if (array[i] < min) min = array[i]
-{
-    System.Console.Write($"{array[i]}  ");
-}
+// if (array[i] < min) min = array[i]
+// {
+//     System.Console.Write($"{array[i]}  ");
+// }
