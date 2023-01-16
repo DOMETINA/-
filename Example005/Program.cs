@@ -170,23 +170,36 @@
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-// double[] array = new double[5];
-// //double result = 0;
-//  double max = 0;
-//  double min = 0;
-// for (double i = 0; i < array.Length; i++)
-// {
-//   array[i] = new Random().NextDouble();
-//     System.Console.Write($"{array[i]}  ");
-// }
-// if (array[i] > max) 
-// max = array[i];
-// {
-    
-// System.Console.Write($"{array[i]}  ");
-// }
+double[] array = new double[5];
+//double result = 0;
+ double max = 0;
+ double min = 0;
+ int x = 0;
+ int x1 = 0;
+for (int i = 0; i < array.Length; i++)
+{
+  array[i] = new Random().NextDouble();
+  System.Console.WriteLine($"{array[i]}  ");
+if (array[i] > max) 
+  max = array[i];
+  {
+    x = 1;
+  }
+  if ( x == max)
+System.Console.WriteLine();
+}
+System.Console.Write($"max = {max}  ");
+for (int i = 0; i < array.Length; i++)
+{
+  if (array[i] < x) 
+  min = array[i];
+  {
+    x1 = 1;
+  }
+  if ( x1 == min)
+ //if (array[i] < max) min = array[i];
+ System.Console.WriteLine();
+}
+System.Console.Write($"min = {min}  ");
+//System.Console.Write($"{max - min}  ");
 
-// if (array[i] < min) min = array[i]
-// {
-//     System.Console.Write($"{array[i]}  ");
-// }
