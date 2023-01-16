@@ -74,42 +74,32 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-Console.Write("Введите число 1: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число 2: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число 1: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число 2: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
 
-double a = num1;
-double b = num2;
+// double a = num1;
+// double b = num2;
 
-Console.WriteLine(Math.Pow(a, b));
+// Console.WriteLine(Math.Pow(a, b));
 
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
 
-// Console.Write("Введите число: ");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int result = 0;
-
-// int[] array = new int[num];
-// //for (int i = 0; i <= num; i++)
-// for (int i = 0; i < array.Length; i++)
-// {
-//     array[i] = i+1;
-//     //array[i] = array[i] + 1;
-//     result = array[i];
-
-//     //result = array[i] + 1;
-
-
-//     //array[i] = result;
-//     //i++;
-//     result = (i +1);
-
-    //Console.Write(result);
-// }
+//  Console.Write("Введите число: ");
+//  int num = Convert.ToInt32(Console.ReadLine());
+//  int result = 0;
+ 
+//  int[] array = {num};
+//  for (int i = 0; i < num; i++)
+//  {
+//     System.Console.Write($"{array[i]}  ");
+//     if (i < num)
+//     result = result + array[i];
+//  }
 // Console.WriteLine(result);
 
 
