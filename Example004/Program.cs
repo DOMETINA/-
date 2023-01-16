@@ -92,15 +92,26 @@
 //  Console.Write("Введите число: ");
 //  int num = Convert.ToInt32(Console.ReadLine());
 //  int result = 0;
- 
+//  while (num > 0)
+//  {
+//     result = result + num % 10;
+//     num = num/ 10;
+//  }
+// Console.WriteLine(result);
+
+
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 //  int[] array = {num};
+//  int result = 0;
 //  for (int i = 0; i < num; i++)
 //  {
 //     System.Console.Write($"{array[i]}  ");
-//     if (i < num)
 //     result = result + array[i];
-//  }
-// Console.WriteLine(result);
+//  }   
+      
+ 
+//Console.WriteLine(result);
 
 
 
