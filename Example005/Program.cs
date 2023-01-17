@@ -119,8 +119,8 @@
 // System.Console.WriteLine();
 //   System.Console.WriteLine(result);
 
-  // Задача 37: Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элементы,
-  // второй и предпоследний и т.д. Результат запишите в новом массиве.
+// Задача 37: Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элементы,
+// второй и предпоследний и т.д. Результат запишите в новом массиве.
 // [1,2,3,4,5]-- 5,8,3
 // [6,7,3,6]-- 36,21
 
@@ -170,36 +170,84 @@
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
+// double[] array = new double[5];
+
+// //double result = 0;
+// int i = 0;
+// double max = 0;
+// double min = 0;
+
+// while (i < array.Length)
+// {
+//    array[i] = new Random().NextDouble();
+//      System.Console.WriteLine($"{array[i]}  ");
+//     if (array[i] >max)
+//     max = array[i];
+//     System.Console.Write($"max = {max}  ");
+// }
+// {
+//     if (array[i] < min)
+//     min = array[i];
+//      System.Console.Write($"min = {min}  ");
+// }
+//     i++;
+
+
+// for (int i = 0; i < array.Length; i++)
+// {
+//     array[i] = new Random().NextDouble();
+//     System.Console.WriteLine($"{array[i]}  ");
+//     if (array[i] > max)
+//         max = array[i];
+//     {
+//         x = 1;
+//     }
+//     if (x == max)
+//         System.Console.WriteLine();
+// }
+// System.Console.Write($"max = {max}  ");
+// for (int i = 0; i < array.Length; i++)
+// {
+//     if (array[i] < min)
+
+//         //i++;
+// array[i] = array[i] +1;
+//     System.Console.WriteLine();
+// }
+// System.Console.Write($"min = {min}  ");
+// System.Console.WriteLine();
+// System.Console.WriteLine();
+// System.Console.Write($"{max - min}  ");
+
+
+
+
+
+
+
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+// [3 7 22 2 78] -> 76
 double[] array = new double[5];
 //double result = 0;
- double max = 0;
- double min = 0;
- int x = 0;
- int x1 = 0;
+double max = 0;
+double min = 0;
+
 for (int i = 0; i < array.Length; i++)
 {
-  array[i] = new Random().NextDouble();
-  System.Console.WriteLine($"{array[i]}  ");
-if (array[i] > max) 
-  max = array[i];
-  {
-    x = 1;
-  }
-  if ( x == max)
-System.Console.WriteLine();
+    array[i] = new Random().NextDouble();
+    System.Console.Write($"{array[i]}  ");
+    if (array[i] > max)
+        max = array[i];
+   
+        System.Console.WriteLine();
 }
-System.Console.Write($"max = {max}  ");
+System.Console.WriteLine($"max = {max} ");
 for (int i = 0; i < array.Length; i++)
 {
-  if (array[i] < x) 
-  min = array[i];
-  {
-    x1 = 1;
-  }
-  if ( x1 == min)
- //if (array[i] < max) min = array[i];
- System.Console.WriteLine();
+    if (array[i] < min)
+        min = array[i];
 }
 System.Console.Write($"min = {min}  ");
-//System.Console.Write($"{max - min}  ");
+System.Console.WriteLine();
+System.Console.Write($"{max - min}  ");
 
