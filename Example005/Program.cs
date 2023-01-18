@@ -190,7 +190,7 @@
 //     min = array[i];
 //      System.Console.Write($"min = {min}  ");
 // }
-//     i++;
+    
 
 
 // for (int i = 0; i < array.Length; i++)
@@ -230,7 +230,7 @@
 double[] array = new double[5];
 //double result = 0;
 double max = 0;
-double min = 0;
+double min = 1;
 
 for (int i = 0; i < array.Length; i++)
 {
