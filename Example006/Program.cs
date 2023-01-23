@@ -61,23 +61,20 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-// int[] array = new int[10];
-// for (int i = 0; i < array.Length; i++)
-// {
-//     array[i] = new Random().Next(-10, 10);
-//     Console.Write($"{array[i]}   ");
-// }
-// System.Console.WriteLine();
-// for (int i = 0; i < array.Length; i++)
-//     if (array[i] > 0)
-
-//     {
-//         int x = 1;
-        
-//         Console.Write($"{x ==1}   ");
-       
-//     }
-
+int[] array = new int[10];
+int x = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = new Random().Next(-10, 10);
+    Console.Write($"{array[i]}   ");
+}
+System.Console.WriteLine();
+for (int i = 0; i < array.Length; i++)
+    if (array[i] > 0)
+    {
+    x = x +1;                  
+    }
+Console.Write($"{x}   ");
 
 // Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных 
 //уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
