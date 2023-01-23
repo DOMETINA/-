@@ -149,11 +149,57 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
+void FillArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = new Random().Next(1, 10);
+            //Console.Write($"{array[i, j]}   ");
+        }
+    }
+}
+void PrintArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        Console.Write("[ ");
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write($"{array[i, j]} ");
+        }
+        Console.Write("]");
+    }
+}
 
-Console.Write("Введите элемент массива  ");
-int N = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число строк: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число столбцов: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[,] arr = new int[m, n];
 
-int[,] array = new int[2, 5];
+FillArray(arr);
+PrintArray(arr);
+
+if (m > arr.GetLength(0) || n > arr.GetLength(1))
+{
+    Console.WriteLine("Такого элемента нет");
+}
+
+else
+{
+    //Console.WriteLine($"Значение элемента {m} строки и столбца {n} равно {arr[m-1,n-1]}");
+    Console.WriteLine($"Значение элемента {arr[m - 1, n - 1]}");
+}
+
+
+
+Console.Write("Введите число строк: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число столбцов: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[,] array = new int[m, n];
 
 for (int i = 0; i < array.GetLength(0); i++)
 {
@@ -166,42 +212,14 @@ for (int i = 0; i < array.GetLength(0); i++)
     System.Console.WriteLine();
 }
 
-for (int i = 0; i < array.GetLength(0); i++)
+if (m > array.GetLength(0) || n > array.GetLength(1))
 {
-    for (int j = 0; j < array.GetLength(1); j++)
-    
-       if( array[i, j] == N)
-        {
-             Console.Write($"{N}   ");
-        }
-           
-    
-        
-// else
-
-// Console.Write("Такого элемента нет");
-
+    Console.Write("Такого элемента нет");
 }
-//         //System.Console.WriteLine();
-
-
-// for (int j = 0; j < array.GetLength(1); j++)
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     // for (int i = 0; i < array.GetLength(0); i++)
-//     // {
-//     //     for (int j = 0; j < array.GetLength(1); j++)
-//     {
-//         if (array[i, j] != N)
-//             Console.Write("Такого элемента нет");
-//     }
-//     System.Console.WriteLine();
-// }
-
-
-
-
-
+else
+{
+    Console.WriteLine($"Значение элемента {array[m - 1, n - 1]}");
+}
 
 
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
@@ -215,7 +233,7 @@ for (int i = 0; i < array.GetLength(0); i++)
 // Console.Write("Введите число столбцов: ");
 // int n = Convert.ToInt32(Console.ReadLine());
 // int[,] array = new int[m, n];
-// int sum = 0;
+// double sum = 0;
 // for (int i = 0; i < array.GetLength(0); i++)
 // {
 //     for (int j = 0; j < array.GetLength(1); j++)
@@ -236,8 +254,8 @@ for (int i = 0; i < array.GetLength(0); i++)
 //         sum = (sum + array[i, j]);
 
 //     }
-// double result = sum / array.GetLength(0);
-// Console.Write($"{Math.Round (result, 3)}   ");
-// sum = 0;
+//     double result = sum / array.GetLength(0);
+//     Console.Write($"{Math.Round(result, 3)}   ");
+//     sum = 0;
 // }
 // System.Console.WriteLine();
