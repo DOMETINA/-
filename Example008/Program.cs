@@ -68,7 +68,7 @@
 //     }
 
 // }
-//ДОМАШНЕЕ ЗАДАНИЕ.
+// ДОМАШНЕЕ ЗАДАНИЕ.
 // Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 // Например, задан массив:
 // 1 4 7 2
@@ -78,6 +78,39 @@
 // 7 4 2 1
 // 9 5 3 2
 // 8 4 4 2
+Console.Write("Введите число m: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число n: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[,] array = new int[m, n];
+int max = 0;
+
+for (int i = 0; i < array.GetLength(0); i++)
+{
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        array[i, j] = new Random().Next(0, 10);
+        Console.Write($"{array[i, j]}  ");
+    }
+
+Console.WriteLine();
+}
+Console.WriteLine();
+// for (int j = 0; j < array.GetLength(1); j++)
+// {
+//     int temp = array[0, j];
+//     array[0, j] > max;
+//     array[;
+// }
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+//     for (int j = 0; j < array.GetLength(1); j++)
+//     {
+//         Console.Write($"{array[i, j]}  ");
+//     }
+// System.Console.WriteLine();
+// }
+
 
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
@@ -92,7 +125,7 @@
 //     System.Console.Write($"{array[i]}  ");
 //     if (array[i] > max)
 //         max = array[i];
-   
+
 //         System.Console.WriteLine();
 // }
 // System.Console.WriteLine($"max = {max} ");
