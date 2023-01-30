@@ -78,44 +78,55 @@
 // 7 4 2 1
 // 9 5 3 2
 // 8 4 4 2
-Console.Write("Введите число m: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число n: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int[,] array = new int[m, n];
-int max = 0;
 
-for (int i = 0; i < array.GetLength(0); i++)
-{
-    for (int j = 0; j < array.GetLength(1); j++)
-    {
-        array[i, j] = new Random().Next(0, 10);
-        Console.Write($"{array[i, j]}  ");
-    }
 
-Console.WriteLine();
-}
-Console.WriteLine();
-// for (int j = 0; j < array.GetLength(1); j++)
+// int[,] array = new int[3, 6];
 // {
-//     int temp = array[0, j];
-//     array[0, j] > max;
-//     array[;
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+
+//         {
+//             array[i, j] = new Random().Next(1, 10);
+//             Console.Write($"{array[i, j]}  ");
+//         }
+//         System.Console.WriteLine();
+//     }
+//     System.Console.WriteLine();
 // }
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             for (int k = 0; k < array.GetLength(1) - 1; k++)
+//             {
+//                 while (array[i, k] < array[i, k + 1])
+//                 {
+//                     int temporary = array[i, k + 1];
+//                     array[i, k + 1] = array[i, k];
+//                     array[i, k] = temporary;
+//                 }
+//             }
+//         }
+//     }
+// }
+
 // for (int i = 0; i < array.GetLength(0); i++)
 // {
 //     for (int j = 0; j < array.GetLength(1); j++)
 //     {
 //         Console.Write($"{array[i, j]}  ");
 //     }
-// System.Console.WriteLine();
+//     System.Console.WriteLine();
 // }
+
 
 
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
-// double[] array = new double[5];
-// //double result = 0;
+//double[] array = new double[5];
+//double result = 0;
 // double max = 0;
 // double min = 1;
 
@@ -146,6 +157,50 @@ Console.WriteLine();
 // 8 4 2 4
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
+
+
+
+
+int[,] array = new int[3, 3];
+int sum = 0;
+int min =0;
+int minSum =0;
+for (int i = 0; i < array.GetLength(0); i++)
+{
+    for (int j = 0; j < array.GetLength(1); j++)
+
+    {
+        array[i, j] = new Random().Next(1, 10);
+        Console.Write($"{array[i, j]}  ");
+    }
+    System.Console.WriteLine();
+}
+System.Console.WriteLine();
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         System.Console.WriteLine();
+//     }
+// }
+int [,] table = new int [3,3];
+        for (int i = 0; i < table. GetLength(1); i++)
+    {
+        min += table[0, i];
+    }
+    for (int i = 0; i < table. GetLength(0); i++)
+    {
+        for (int j = 0; j < table. GetLength(1); j++) sum += table[i, j];
+        if (sum < min)
+        {
+            min = sum;
+            minSum = i;
+        }
+        sum = 0;
+    }
+    System.Console.Write($"{minSum + 1} строка");
+
+
 
 // Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 // Например, даны 2 матрицы:
