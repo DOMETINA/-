@@ -80,46 +80,46 @@
 // 8 4 4 2
 
 
-// int[,] array = new int[3, 6];
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
+int[,] array = new int[3, 6];
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
 
-//         {
-//             array[i, j] = new Random().Next(1, 10);
-//             Console.Write($"{array[i, j]}  ");
-//         }
-//         System.Console.WriteLine();
-//     }
-//     System.Console.WriteLine();
-// }
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         {
-//             for (int k = 0; k < array.GetLength(1) - 1; k++)
-//             {
-//                 while (array[i, k] < array[i, k + 1])
-//                 {
-//                     int temporary = array[i, k + 1];
-//                     array[i, k + 1] = array[i, k];
-//                     array[i, k] = temporary;
-//                 }
-//             }
-//         }
-//     }
-// }
+        {
+            array[i, j] = new Random().Next(1, 10);
+            Console.Write($"{array[i, j]}  ");
+        }
+        System.Console.WriteLine();
+    }
+    System.Console.WriteLine();
+}
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            for (int k = 0; k < array.GetLength(1) - 1; k++)
+            {
+                while (array[i, k] < array[i, k + 1])
+                {
+                    int temporary = array[i, k + 1];
+                    array[i, k + 1] = array[i, k];
+                    array[i, k] = temporary;
+                }
+            }
+        }
+    }
+}
 
-// for (int i = 0; i < array.GetLength(0); i++)
-// {
-//     for (int j = 0; j < array.GetLength(1); j++)
-//     {
-//         Console.Write($"{array[i, j]}  ");
-//     }
-//     System.Console.WriteLine();
-// }
+for (int i = 0; i < array.GetLength(0); i++)
+{
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        Console.Write($"{array[i, j]}  ");
+    }
+    System.Console.WriteLine();
+}
 
 
 
