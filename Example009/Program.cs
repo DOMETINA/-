@@ -112,8 +112,8 @@
 
 // Задача 64: Задайте значение N. Напишите программу, которая выведет сумму чисел в промежутке от N до 1. Выполнить с помощью рекурсии.
 
-// N = 5 -> "5, 4, 3, 2, 1"
-// N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
+//N = 5 -> "15"
+//N = 8 -> "36"
 // Console.Write("Введите число N:  ");
 // int N = Convert.ToInt32(Console.ReadLine());
 // int Sum (int N)
@@ -131,36 +131,30 @@
 //  System.Console.Write(x);
 
 
-
-
-// System.Console.Write(x);
-// int sum = x+x;
-//  System.Console.Write(sum);
-
 // Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-// Console.Write("Введите число M:  ");
-// int M = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите число N:  ");
-// int N = Convert.ToInt32(Console.ReadLine());
-// int start = M;
-// int end = N;
-// int Sum(int N, int M)
-// {
-//     if (M > N)
-//     {
-//         start = N;
-//         end = M;
-//     }
+Console.Write("Введите число M:  ");
+int M = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число N:  ");
+int N = Convert.ToInt32(Console.ReadLine());
+int start = M;
+int end = N;
+int Sum(int N, int M)
+{
+    if (M > N)
+    {
+        start = N;
+        end = M;
+    }
 
 
-//     return (end + start) * (end - start + 1) / 2;
-// }
-// int x = Sum(N, M);
-// System.Console.Write(x);
+    return (end + start) * (end - start + 1) / 2;
+}
+int x = Sum(N, M);
+System.Console.Write(x);
 
 
 
