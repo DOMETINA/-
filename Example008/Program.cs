@@ -123,31 +123,7 @@
 
 
 
-// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
-// [3 7 22 2 78] -> 76
-//double[] array = new double[5];
-//double result = 0;
-// double max = 0;
-// double min = 1;
 
-// for (int i = 0; i < array.Length; i++)
-// {
-//     array[i] = new Random().NextDouble();
-//     System.Console.Write($"{array[i]}  ");
-//     if (array[i] > max)
-//         max = array[i];
-
-//         System.Console.WriteLine();
-// }
-// System.Console.WriteLine($"max = {max} ");
-// for (int i = 0; i < array.Length; i++)
-// {
-//     if (array[i] < min)
-//         min = array[i];
-// }
-// System.Console.Write($"min = {min}  ");
-// System.Console.WriteLine();
-// System.Console.Write($"{max - min}  ");
 
 
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
@@ -176,14 +152,8 @@
 //     System.Console.WriteLine();
 // }
 // System.Console.WriteLine();
-// // {
-// //     for (int i = 0; i < array.GetLength(0); i++)
-// //     {
-// //         for (int j = 0; j < array.GetLength(1); j++)
-// //         System.Console.WriteLine();
-// //     }
-// // }
-// int [,] table = new int [3,3];
+
+// int [,] table = new int [4,4];
 //         for (int i = 0; i < table. GetLength(1); i++)
 //     {
 //         min += table[0, i];
@@ -216,6 +186,31 @@
 // 34(1,0,0) 41(1,1,0)
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
+
+// Console.Write("Введите число m: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число n: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число k: ");
+// int k = Convert.ToInt32(Console.ReadLine());
+// int[,,] array = new int[m, n, k];
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+//     for (int j = 0; j < array.GetLength(1); j++)
+//     {
+//         for (k = 0; k < array.GetLength(2); k++)
+//         {
+//             array[i, j, k] = new Random().Next(0, 10);
+//             Console.Write($"{array[i, j, k]}  ");
+//         }
+
+//         Console.WriteLine();
+//     }
+//     System.Console.WriteLine();
+// }
+
+
+
 
 // Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 // Например, на выходе получается вот такой массив:
@@ -469,16 +464,16 @@
 // Console.Write("Введите количество строк и столбцов nxn: ");
 
 
-int[,] array = new int[3, 3];
-for (int i = 0; i < array.GetLength(0); i++)
-{
-    for (int j = 0; j < array.GetLength(1); j++)
-    {
-        array[i, j] = new Random().Next(0, 10);
-        Console.Write($"{array[i, j]}  ");
-    }
-    System.Console.WriteLine();
-}
+// int[,] array = new int[3, 3];
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+//     for (int j = 0; j < array.GetLength(1); j++)
+//     {
+//         array[i, j] = new Random().Next(0, 10);
+//         Console.Write($"{array[i, j]}  ");
+//     }
+//     System.Console.WriteLine();
+// }
 
 
 
@@ -503,30 +498,30 @@ for (int i = 0; i < array.GetLength(0); i++)
 //                 Console.WriteLine();
 //             }
 //Console.ReadLine();
-  int n = Convert.ToInt16(Console.ReadLine());
-            int[] res1 = new int[n];  //массив для хранения сумм строк
-            int summ1 = 0;
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    summ1 += array[i, j];   //суммируем элементы строки
-                }
-                res1[i] = summ1; //пишем сумму в массив
-                summ1 = 0; //обнуляем переменную
-            }
+//   int n = Convert.ToInt16(Console.ReadLine());
+//             int[] res1 = new int[n];  //массив для хранения сумм строк
+//             int summ1 = 0;
+//             for (int i = 0; i < n; i++)
+//             {
+//                 for (int j = 0; j < n; j++)
+//                 {
+//                     summ1 += array[i, j];   //суммируем элементы строки
+//                 }
+//                 res1[i] = summ1; //пишем сумму в массив
+//                 summ1 = 0; //обнуляем переменную
+//             }
 
 
-    //Console.Write($"{res1[i]}  ");
-int max = 0;    //индекс строки с максимальной суммой
-for (int j = 1; j < n; j++)
-{
-    if (res1[j] > res1[max])   //если есть строка с суммой больше, то пишем в max её индекс
-        max = j;
-     
-}
+//     //Console.Write($"{res1[i]}  ");
+// int max = 0;    //индекс строки с максимальной суммой
+// for (int j = 1; j < n; j++)
+// {
+//     if (res1[j] > res1[max])   //если есть строка с суммой больше, то пишем в max её индекс
+//         max = j;
 
-Console.WriteLine("Номер строки с максимальной суммой элементов "+ max );
+// }
+
+//Console.WriteLine("Номер строки с максимальной суммой элементов "+ max );
 // //Console.ReadLine();
 
 // int[] res2 = new int[n];   //то же самое, только для столбцов
